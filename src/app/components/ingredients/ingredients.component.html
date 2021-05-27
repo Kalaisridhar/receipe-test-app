@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-4"  *ngFor="let ingredient of ingredients">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ingredient.food.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ingredient.food.label}}</h5>
+                <p class="card-text">Category: {{ingredient.food.category}}</p>
+                <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+        </div>
+    </div>
+</div>
